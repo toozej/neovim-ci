@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 RUN apk update && \ 
-    apk --no-cache add neovim git && \
+    apk --no-cache add neovim git curl && \
     rm -rf /var/cache/apk/*
 
 RUN rm -rf /root/.config/nvim/ && \
